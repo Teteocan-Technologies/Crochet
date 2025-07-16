@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo - Emprendimiento de Croché</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -25,7 +25,7 @@
     </script>
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #FFF8FA;
             overflow-x: hidden;
         }
@@ -34,6 +34,15 @@
         }
         .dancing {
             font-family: 'Dancing Script', cursive;
+        }
+        .crimson {
+            font-family: 'Crimson Text', serif;
+        }
+        .cormorant {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .poppins {
+            font-family: 'Poppins', sans-serif;
         }
         .gradient-bg {
             background: linear-gradient(135deg, #FFF0F5 0%, #FFF8FA 100%);
@@ -162,13 +171,13 @@
                 <div class="lg:w-1/2 mb-12 lg:mb-0 z-10 text-center lg:text-left">
                     <div class="relative inline-block">
                         <span class="absolute -top-8 -left-8 text-5xl animate-pulse">✨</span>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-pink-600 dancing leading-tight">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light mb-6 text-pink-600 cormorant leading-tight">
                             Creaciones únicas<br>
-                            <span class="text-pink-500">tejidas con amor</span>
+                            <span class="text-pink-500 font-medium italic">tejidas con amor</span>
                         </h1>
                     </div>
-                    <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Bienvenido al mundo mágico del <span class="font-semibold text-pink-500">croché artesanal</span>, 
+                    <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed poppins font-light">
+                        Bienvenido al mundo mágico del <span class="font-medium text-pink-500 crimson">croché artesanal</span>, 
                         donde cada pieza es una obra de arte tejida a mano con dedicación y cariño.
                     </p>
                     
@@ -438,7 +447,7 @@
             </div>
             
             <div class="text-center mt-10">
-                <a href="#" class="inline-block px-6 py-2 text-pink-500 border-b-2 border-pink-300 hover:border-pink-500 transition duration-300">Ver más en Instagram</a>
+                <a href="https://www.instagram.com/a_y_j_crochet?igsh=N3RwcW4xMzVidnZt&utm_source=qr" target="_blank" rel="noopener" class="inline-block px-6 py-2 text-pink-500 border-b-2 border-pink-300 hover:border-pink-500 transition duration-300 poppins font-medium">Ver más en Instagram</a>
             </div>
         </div>
     </section>
