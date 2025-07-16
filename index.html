@@ -3,12 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=./plantilla1.html">
+    <meta http-equiv="refresh" content="3; url=./plantilla1.html">
     <title>A & J Crochet - Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .dancing { font-family: 'Dancing Script', cursive; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        
+        .bg-pattern {
+            background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 25%, #fbcfe8 50%, #f9a8d4 75%, #fdf2f8 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .sparkle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: sparkle-animation 2s ease-in-out infinite;
+        }
+        
+        @keyframes sparkle-animation {
+            0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+            50% { opacity: 1; transform: scale(1) rotate(180deg); }
+        }
+    </style>
 </head>
-<body>
-    <p>Redirigiendo a la demo de A & J Crochet...</p>
-    <p><a href="./plantilla1.html">Haz clic aquí si no eres redirigido automáticamente</a></p>
+<body class="bg-pattern min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute top-10 right-10 w-32 h-32 bg-pink-200 opacity-30 rounded-full blur-xl"></div>
+    <div class="absolute bottom-20 left-20 w-40 h-40 bg-purple-200 opacity-25 rounded-full blur-2xl"></div>
+    <div class="absolute top-1/2 left-10 w-24 h-24 bg-rose-200 opacity-40 rounded-full blur-lg"></div>
+    
+    <!-- Floating sparkles -->
+    <div class="sparkle w-2 h-2 top-1/4 left-1/4" style="animation-delay: 0s;"></div>
+    <div class="sparkle w-3 h-3 top-1/3 right-1/4" style="animation-delay: 0.5s;"></div>
+    <div class="sparkle w-2 h-2 bottom-1/3 left-1/3" style="animation-delay: 1s;"></div>
+    <div class="sparkle w-3 h-3 bottom-1/4 right-1/3" style="animation-delay: 1.5s;"></div>
+    
+    <div class="text-center max-w-2xl mx-auto px-6">
+        <!-- Logo and title -->
+        <div class="mb-8 floating">
+            <div class="relative inline-block">
+                <img src="logo.jpeg" alt="A & J Crochet Logo" class="w-24 h-24 mx-auto rounded-full shadow-lg mb-4 pulse-glow">
+                <div class="absolute -top-2 -right-2 w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center text-white text-sm animate-bounce">
+                    ✨
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold dancing text-pink-600 mb-2">
+                A & J Crochet
+            </h1>
+            <p class="text-lg text-pink-500 playfair">Demo de sitio web</p>
+        </div>
+        
+        <!-- Main content -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-pink-100">
+            <!-- Cute bunny illustration -->
+            <div class="mb-6 floating" style="animation-delay: 0.5s;">
+                <svg class="w-32 h-32 mx-auto" viewBox="0 0 200 200">
+                    <!-- Bunny body -->
+                    <ellipse cx="100" cy="140" rx="40" ry="45" fill="#FFF0F5" />
+                    <!-- Head -->
+                    <circle cx="100" cy="90" r="35" fill="#FFF0F5" />
+                    <!-- Ears -->
+                    <ellipse cx="85" cy="50" rx="10" ry="25" fill="#FFF0F5" />
+                    <ellipse cx="115" cy="50" rx="10" ry="25" fill="#FFF0F5" />
+                    <ellipse cx="85" cy="50" rx="6" ry="20" fill="#FFCCD5" />
+                    <ellipse cx="115" cy="50" rx="6" ry="20" fill="#FFCCD5" />
+                    <!-- Eyes -->
+                    <circle cx="90" cy="85" r="4" fill="#333" />
+                    <circle cx="110" cy="85" r="4" fill="#333" />
+                    <circle cx="91" cy="83" r="1.5" fill="white" />
+                    <circle cx="111" cy="83" r="1.5" fill="white" />
+                    <!-- Blush -->
+                    <ellipse cx="75" cy="95" rx="8" ry="5" fill="#FFAFCC" opacity="0.7" />
+                    <ellipse cx="125" cy="95" rx="8" ry="5" fill="#FFAFCC" opacity="0.7" />
+                    <!-- Nose -->
+                    <ellipse cx="100" cy="100" rx="3" ry="2" fill="#FFAFCC" />
+                    <!-- Mouth -->
+                    <path d="M97,105 Q100,108 103,105" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </div>
+            
+            <h2 class="text-3xl md:text-4xl font-bold dancing text-pink-600 mb-4">
+                Creaciones únicas<br>
+                <span class="text-pink-500">tejidas con amor</span>
+            </h2>
+            
+            <p class="text-gray-600 mb-6 leading-relaxed">
+                Bienvenido al mundo mágico del <span class="font-semibold text-pink-500">croché artesanal</span>, 
+                donde cada pieza es una obra de arte tejida a mano con dedicación y cariño.
+            </p>
+            
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+                <a href="./plantilla1.html" class="inline-block px-8 py-3 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full shadow-lg hover:from-pink-500 hover:to-pink-600 transition duration-300 font-semibold transform hover:scale-105">
+                    Ver creaciones
+                </a>
+                <a href="./plantilla1.html#contacto" class="inline-block px-8 py-3 bg-white text-pink-500 border-2 border-pink-300 rounded-full shadow-lg hover:bg-pink-50 hover:border-pink-400 transition duration-300 font-semibold transform hover:scale-105">
+                    Contactar
+                </a>
+            </div>
+            
+            <!-- Loading message -->
+            <div class="text-sm text-gray-500">
+                <div class="flex items-center justify-center space-x-2">
+                    <div class="w-2 h-2 bg-pink-400 rounded-full animate-bounce"></div>
+                    <div class="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+                    <div class="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                    <span class="ml-2">Cargando demo...</span>
+                </div>
+                <p class="mt-2">Serás redirigido automáticamente en unos segundos</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 </content>

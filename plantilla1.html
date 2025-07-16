@@ -153,36 +153,48 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="pt-28 pb-20 bg-pattern relative overflow-hidden">
+    <section id="inicio" class="pt-28 pb-20 bg-pattern relative overflow-hidden min-h-screen flex items-center">
         <div class="absolute top-20 right-0 w-64 h-64 bg-rose-light opacity-50 rounded-full blur-3xl -z-10"></div>
         <div class="absolute bottom-10 left-10 w-80 h-80 bg-lavender-light opacity-40 rounded-full blur-3xl -z-10"></div>
         
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 z-10">
-                    <div class="relative">
-                        <span class="absolute -top-6 -left-6 text-5xl">✨</span>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-pink-600 dancing">Creaciones únicas<br>tejidas con amor</h1>
+        <div class="container mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 z-10 text-center lg:text-left">
+                    <div class="relative inline-block">
+                        <span class="absolute -top-8 -left-8 text-5xl animate-pulse">✨</span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-pink-600 dancing leading-tight">
+                            Creaciones únicas<br>
+                            <span class="text-pink-500">tejidas con amor</span>
+                        </h1>
                     </div>
-                    <p class="text-lg text-gray-600 mb-8 max-w-lg">Bienvenido al mundo mágico del <span class="font-semibold text-pink-500">croché artesanal</span>, donde cada pieza es una obra de arte tejida a mano con dedicación y cariño.</p>
+                    <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Bienvenido al mundo mágico del <span class="font-semibold text-pink-500">croché artesanal</span>, 
+                        donde cada pieza es una obra de arte tejida a mano con dedicación y cariño.
+                    </p>
                     
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#creaciones" class="px-8 py-3 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full shadow-button hover:from-pink-500 hover:to-pink-600 transition duration-300 text-center">Ver creaciones</a>
-                        <a href="#contacto" class="px-8 py-3 bg-white text-pink-500 border border-pink-300 rounded-full shadow-button hover:bg-pink-50 transition duration-300 text-center">Contactar</a>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+                        <a href="#creaciones" class="inline-block px-10 py-4 bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-full shadow-button hover:from-pink-500 hover:to-pink-600 transition duration-300 text-center font-semibold text-lg transform hover:scale-105">
+                            Ver creaciones
+                        </a>
+                        <a href="#contacto" class="inline-block px-10 py-4 bg-white text-pink-500 border-2 border-pink-300 rounded-full shadow-button hover:bg-pink-50 hover:border-pink-400 transition duration-300 text-center font-semibold text-lg transform hover:scale-105">
+                            Contactar
+                        </a>
                     </div>
                 </div>
                 
-                <div class="md:w-1/2 flex justify-center relative">
+                
+                <div class="lg:w-1/2 flex justify-center lg:justify-end relative">
                     <div class="relative">
                         <!-- Decorative elements -->
-                        <div class="absolute -top-10 -left-10 w-20 h-20 bg-rose-medium opacity-30 rounded-full blob-spin"></div>
-                        <div class="absolute -bottom-5 -right-5 w-16 h-16 bg-lavender-medium opacity-40 rounded-full blob"></div>
+                        <div class="absolute -top-12 -left-12 w-24 h-24 bg-rose-medium opacity-30 rounded-full blob-spin"></div>
+                        <div class="absolute -bottom-8 -right-8 w-20 h-20 bg-lavender-medium opacity-40 rounded-full blob"></div>
+                        <div class="absolute top-20 right-20 w-16 h-16 bg-pink-200 opacity-50 rounded-full animate-pulse"></div>
                         
                         <!-- Main image container -->
-                        <div class="relative w-72 h-72 md:w-80 md:h-80 bg-white rounded-full overflow-hidden shadow-soft blob">
-                            <div class="absolute inset-3 bg-gradient-to-br from-rose-light to-white rounded-full flex items-center justify-center">
+                        <div class="relative w-80 h-80 md:w-96 md:h-96 lg:w-[400px] lg:h-[400px] bg-white rounded-full overflow-hidden shadow-soft blob">
+                            <div class="absolute inset-4 bg-gradient-to-br from-rose-light via-pink-50 to-white rounded-full flex items-center justify-center">
                                 <!-- Amigurimi illustration -->
-                                <svg class="w-56 h-56 floating" viewBox="0 0 200 200">
+                                <svg class="w-64 h-64 md:w-72 md:h-72 floating" viewBox="0 0 200 200">
                                     <!-- Bunny amigurimi -->
                                     <ellipse cx="100" cy="130" rx="45" ry="50" fill="#FFF0F5" />
                                     <!-- Head -->
